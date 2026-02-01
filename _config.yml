@@ -1,0 +1,15 @@
+title: Cloud & DevOps Knowledge Base
+description: Practical notes on AWS, Terraform, Docker, Kubernetes & Automation
+theme: null
+
+markdown: kramdown
+highlighter: rouge
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: Ram Dhamdar

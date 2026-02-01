@@ -1,0 +1,46 @@
+:root {
+  --bg: #0d1117;
+  --fg: #c9d1d9;
+  --accent: #58a6ff;
+  --card: #161b22;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, monospace;
+}
+
+.container {
+  max-width: 860px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--card);
+}
+
+.navbar a {
+  color: var(--fg);
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.post {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.tag {
+  background: #30363d;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.4rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
