@@ -1,14 +1,11 @@
 ---
-layout: default
+layout: default  # Or 'home' if supported
 title: Home
 ---
-
-# ☁️ Cloud & DevOps Notes
-
 {% for post in site.posts %}
-### [{{ post.title }}]({{ post.url }})
-{{ post.excerpt | strip_html | truncate: 120 }}
-
-Tags: {% for tag in post.tags %}`{{ tag }}` {% endfor %}
----
+  <article>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    <small>Tags: {{ post.tags | join: ', ' }}</small>
+  </article>
 {% endfor %}

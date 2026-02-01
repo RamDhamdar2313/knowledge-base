@@ -1,6 +1,7 @@
 ---
-title: Terraform Core Concepts You Actually Need
+layout: post
+title: 'Terraform Core Concepts You Actually Need'
+date: 2026-02-01
 tags: [terraform, aws, iac]
 ---
-
-Terraform is state + graph + execution plan.
+# Content here...
