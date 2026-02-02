@@ -12,21 +12,20 @@ body {
   font-family: system-ui, monospace;
 }
 #menuBtn {
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: inline-block;
+  position: fixed;
+  background: none !important;  /* Removes button background */
+  border: none !important;     /* Removes border */
+  padding: 0 !important;       /* Removes default padding */
+  margin: 0 !important;        /* Removes margins */
+  display: inline-block;       /* Better control */
   cursor: pointer;
-  width: 40px;
+  width: 40px;  /* Match your icon size */
   height: 40px;
-
-  position: fixed;  /* or absolute depending on your layout */
   top: 18px;
+  z-index:1002;
   right: 18px;
-  z-index: 1002;
-}
 
+}
 /* ===== OVERLAY ===== */
 #overlay {
   position: fixed;
