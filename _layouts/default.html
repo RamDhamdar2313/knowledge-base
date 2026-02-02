@@ -7,7 +7,21 @@
   {% seo %}
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>
+<body> 
+  {% include navbar.html %}
+
+<div class="container">
+  <input type="text" id="search" placeholder="Search blogs..." />
+
+  <div id="posts">
+    {% for post in site.posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+</div>
+
+<script src="/assets/js/search.js"></script>
+
   {% include header.html %}
   <main class="container">
     {{ content }}

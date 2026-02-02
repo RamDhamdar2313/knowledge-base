@@ -1,14 +1,21 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
 
-<article class="post">
+{% include navbar.html %}
+
+<article class="blog-post">
   <h1>{{ page.title }}</h1>
   <p class="meta">
-    {{ page.date | date: "%d %b %Y" }}
-    {% for tag in page.tags %}
-      <span class="tag">{{ tag }}</span>
-    {% endfor %}
+    {{ page.date | date: "%d %b %Y" }} · {{ page.tags | join: ", " }}
   </p>
   {{ content }}
 </article>
+
+{% include footer.html %}
+</body>
+</html>

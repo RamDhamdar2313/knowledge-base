@@ -44,3 +44,41 @@ body {
   border-radius: 4px;
   font-size: 0.75rem;
 }
+
+body {
+  font-family: system-ui;
+  background: #020617;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.post-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}

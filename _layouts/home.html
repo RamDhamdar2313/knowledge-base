@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+{% include navbar.html %}
+
+<section class="hero">
+  <h1>DevOps Knowledge Base</h1>
+  <p>Clean. Practical. No bullshit.</p>
+</section>
+
+<section class="posts-grid">
+  {% assign random_posts = site.posts | sample:6 %}
+  {% for post in random_posts %}
+    {% include post-card.html post=post %}
+  {% endfor %}
+</section>
+
+<div class="center">
+  <a href="/blogs" class="btn">See all blogs</a>
+</div>
+
+{% include footer.html %}
+</body>
+</html>

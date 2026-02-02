@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Terraform Core Concepts You Actually Need'
-date: 2026-02-01
+title: Terraform Core Concepts You Actually Need
 tags: [terraform, aws, iac]
 ---
-# Content here...
+
+Here is the real explanation...
