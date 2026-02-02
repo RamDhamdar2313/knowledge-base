@@ -1,5 +1,5 @@
 :root {
-  --bg: #4781d8;
+  --bg: #4180dd;
   --fg: #c9d1d9;
   --accent: #58a6ff;
   --card: #161b22;
@@ -12,19 +12,21 @@ body {
   font-family: system-ui, monospace;
 }
 #menuBtn {
-  background: none !important;  /* Removes button background */
-  border: none !important;     /* Removes border */
-  padding: 0 !important;       /* Removes default padding */
-  margin: 0 !important;        /* Removes margins */
-  display: inline-block;       /* Better control */
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-block;
   cursor: pointer;
-  width: 40px;  /* Match your icon size */
+  width: 40px;
   height: 40px;
-  top: 18px;
-  z-index:1002;
-  right: 18px;
 
+  position: fixed;  /* or absolute depending on your layout */
+  top: 18px;
+  right: 18px;
+  z-index: 1002;
 }
+
 /* ===== OVERLAY ===== */
 #overlay {
   position: fixed;
