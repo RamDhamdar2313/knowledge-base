@@ -12,6 +12,7 @@ body {
   font-family: system-ui, monospace;
 }
 #menuBtn {
+  position: fixed;
   background: none !important;  /* Removes button background */
   border: none !important;     /* Removes border */
   padding: 0 !important;       /* Removes default padding */
