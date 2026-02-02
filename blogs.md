@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: All Blogs
 permalink: /blogs/
 ---
