@@ -20,3 +20,6 @@ body {
   background: var(--bg);
   color: var(--fg);
 }
+html {
+  scrollbar-gutter: stable;
+}
