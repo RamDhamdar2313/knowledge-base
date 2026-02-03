@@ -1,0 +1,45 @@
+main,
+.page-content,
+.blog-post,
+.posts-grid {
+  margin-top: 60px;
+}
+
+.container {
+  max-width: 860px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.top-ribbon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  background: linear-gradient(180deg, #111 0%, #000 100%);
+  box-shadow:
+    0 4px 14px rgba(0,0,0,.35),
+    inset 0 -1px 0 rgba(255,255,255,.06);
+}
+
+.top-ribbon img {
+  height: 38px;
+}
+
+.ribbon-right a {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 28px;
+  font-size: 15px;
+}
+
+.ribbon-right a:hover {
+  text-decoration: underline;
+}

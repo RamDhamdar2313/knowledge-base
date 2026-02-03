@@ -1,4 +1,0 @@
-:root {
-  --accent: #0d6efd;  /* Blue for AWS/Terraform */
-}
-article h3 a { color: var(--accent); }

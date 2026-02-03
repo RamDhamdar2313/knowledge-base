@@ -1,0 +1,13 @@
+:root {
+  --bg: #4180dd;
+  --fg: #c9d1d9;
+  --accent: #58a6ff;
+  --card: #161b22;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, monospace;
+  background: #020617;
+  color: #e5e7eb;
+}
