@@ -1,21 +1,29 @@
- <header class="top-ribbon">
+<header class="top-ribbon">
   <div class="ribbon-left">
-    <a href="index.html" class="logo-button">
-    <img src="{{site.baseurl}}/assets/images/icon.png" alt="Logo"></a>
+    <a href="{{ site.baseurl }}/" class="logo-button">
+      <img src="{{ site.baseurl }}/assets/images/icon.png" alt="Logo">
+    </a>
   </div>
-  <nav class="ribbon-right">
-    <a href="{{ site.baseurl }}/blogs/">blogs</a>
-  </nav>
-  <button id="themeToggle" aria-label="Toggle theme">
-    🌙
-  </button>
-  <button id="menuBtn" aria-label="Open menu"><img src="{{site.baseurl}}/assets/images/menu-icon.png" alt="Menu"> </button>
-  <div id="overlay"></div>
+
+  <div class="ribbon-right">
+    <a href="{{ site.baseurl }}/blogs/">Blogs</a>
+
+    <button id="themeToggle" aria-label="Toggle theme">
+      🌙
+    </button>
+
+    <button id="menuBtn" aria-label="Open menu">
+      <img src="{{ site.baseurl }}/assets/images/menu-icon.png" alt="Menu">
+    </button>
+  </div>
+</header>
+
+<!-- OUTSIDE HEADER (IMPORTANT) -->
+<div id="overlay"></div>
 
 <nav id="sideNav" aria-label="Main navigation">
-  <a href="index.html#tutor">About Us</a>
-  <a href="courses.html">Our Courses</a>
-  <a href="knowledge-base.html">Knowledge Base</a>
-  <a href="contact.html">Contact Us</a>
+  <a href="{{ site.baseurl }}/#tutor">About Us</a>
+  <a href="{{ site.baseurl }}/courses.html">Our Courses</a>
+  <a href="{{ site.baseurl }}/knowledge-base.html">Knowledge Base</a>
+  <a href="{{ site.baseurl }}/contact.html">Contact Us</a>
 </nav>
-</header>
