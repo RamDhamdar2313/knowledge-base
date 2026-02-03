@@ -5,12 +5,18 @@
 }
 
 .card {
-  background: #fff;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 15px 35px rgba(0,0,0,.08);
-  transition: transform .25s ease, box-shadow .25s ease;
+  background: var(--card);
+  border: 1px solid var(--border);
 }
+
+.top-ribbon {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--bg) 90%, black),
+    color-mix(in srgb, var(--bg) 70%, black)
+  );
+}
+
 
 .card:hover {
   transform: translateY(-6px) scale(1.02);

@@ -1,13 +1,22 @@
+/* DEFAULT = dark */
 :root {
-  --bg: #4180dd;
-  --fg: #c9d1d9;
+  --bg: #020617;
+  --fg: #e5e7eb;
+  --card: #020617;
+  --border: #1e293b;
   --accent: #58a6ff;
-  --card: #161b22;
+}
+
+/* LIGHT THEME OVERRIDES */
+body.light {
+  --bg: #f8fafc;
+  --fg: #020617;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --accent: #2563eb;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, monospace;
-  background: #020617;
-  color: #e5e7eb;
+  background: var(--bg);
+  color: var(--fg);
 }
